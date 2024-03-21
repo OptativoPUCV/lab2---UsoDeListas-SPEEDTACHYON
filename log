@@ -468,3 +468,9 @@ exercises.c:138:3: error: implicit declaration of function ‘free_stack’; did
 cc1: all warnings being treated as errors
 Compilation failed
 111d960
+Thu 21 Mar 2024 09:06:35 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+8ea5581
