@@ -205,7 +205,7 @@ int parentesisBalanceados(char *cadena)
       i++;
       
     }
-  if(cont==0 || cont2==0 || cont3==0)
+  if(cont==0 && cont2>0 && cont3>0)
     return 1;
   if(pop(P1)==NULL)
   {
