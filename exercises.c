@@ -84,7 +84,7 @@ int sumaLista(List *L)
       dato = (int*)next(L);
     }
   
-  return 0;
+  return suma;
 }
 
 /*
