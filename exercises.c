@@ -158,7 +158,7 @@ int parentesisBalanceados(char *cadena)
       if(cadena[i]=='(')
       {
         push(P1,&cadena[i]);
-        cont+=1
+        cont+=1;
         
       }
       else
