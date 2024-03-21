@@ -136,6 +136,7 @@ void copia_pila(Stack* P1, Stack* P2)
       
     }
   free(P3);
+  
 
   
 }
@@ -151,11 +152,13 @@ int parentesisBalanceados(char *cadena)
 {
   Stack* P1 = create_stack();
   int i=0;
+  int cont=0;
   while(cadena[i]!='\0')
     {
       if(cadena[i]=='(')
       {
         push(P1,&cadena[i]);
+        cont+=1
         
       }
       else
@@ -198,6 +201,8 @@ int parentesisBalanceados(char *cadena)
       i++;
       
     }
+  if(cont==0)
+    return 1;
   if(pop(P1)==NULL)
   {
     return 1;

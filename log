@@ -474,3 +474,17 @@ Thu 21 Mar 2024 09:06:35 PM UTC:
  tests:  6|2
 total_score: 50/70
 8ea5581
+Thu 21 Mar 2024 09:11:26 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:161:16: error: expected ‘;’ before ‘}’ token
+  161 |         cont+=1
+      |                ^
+      |                ;
+  162 | 
+  163 |       }
+      |       ~         
+Compilation failed
+275e2f6
