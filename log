@@ -324,3 +324,40 @@ exercises.c:165:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 01b3a32
+Thu 21 Mar 2024 08:45:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:48:18: error: passing argument 2 of ‘pushBack’ makes pointer from integer without a cast [-Werror=int-conversion]
+   48 |       pushBack(L,i);
+      |                  ^
+      |                  |
+      |                  int
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:20:30: note: expected ‘void *’ but argument is of type ‘int’
+   20 | void pushBack(List *L, void *dato);
+      |                        ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:49:33: error: invalid application of ‘sizeof’ to incomplete type ‘List’
+   49 |       L= (List*)malloc(i*sizeof(List));
+      |                                 ^~~~
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:146:23: error: passing argument 2 of ‘push’ makes pointer from integer without a cast [-Werror=int-conversion]
+  146 |         push(P1,cadena[i]);
+      |                 ~~~~~~^~~
+      |                       |
+      |                       char
+In file included from exercises.c:7,
+                 from test.c:5:
+stack.h:11:31: note: expected ‘void *’ but argument is of type ‘char’
+   11 | void push(Stack *stack, void *data) { pushFront(stack, data); }
+      |                         ~~~~~~^~~~
+In file included from test.c:5:
+exercises.c:165:1: error: control reaches end of non-void function [-Werror=return-type]
+  165 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a83af9e
